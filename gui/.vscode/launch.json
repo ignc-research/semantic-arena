@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "scenario editor",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/daniel/catkin_ws/src/arena-rosnav/gui/FlatlandScenarioEditor.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "model editor",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/daniel/catkin_ws/src/arena-rosnav/gui/FlatlandModelEditor.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
