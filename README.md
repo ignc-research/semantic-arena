@@ -2,6 +2,8 @@
 This repository provides a platform to develop semantic drl based navigation approaches. It uses to arena-rosnav repository and combines it with pedsim for human behavior modeling. Furthermore it extends the pedisim social force model with industrial object classes like forklift, vehicle or collaborative robots. 
 The repository also provides 3 semantic drl-based agents which are able to navigate savely around different human types.
 
+# Installation
+See [Installation Manual](https://github.com/ignc-research/semantic-arena/blob/main/docs/Installation.md)
 
 # Pedestrian Simulator
 Pedestrian Simulator (Pedsim) is a 2D pedestrian simulator based on the social force model of Helbing et. al. Note the original repository: https://github.com/srl-freiburg/pedsim_ros
@@ -27,27 +29,10 @@ For Pedsim to work together with Arena-Rosnav it needs to be synced to Flatland 
 | *Forklift agent doing some work* |
 
 
-# Demo
-#### 1. Normal Arena-Rosnav Installation
-See [Installation Manual](https://github.com/ignc-research/semantic-arena/blob/main/docs/Installation.md)
-
-#### 2. Switch to sim_to_real branch and pull forks
-```
-cd ~/catkin_ws/src/arena-rosnav
-git checkout sim_to_real
-rosws update --delete-changed-uris .
-```
-
-#### 3. Build and Source
-```
-cd ~/catkin_ws
-catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
-source devel/setup.zsh
-```
-
-#### 4. Start Demo
+## Demo
+After Installation, activate rosnav environment if you haven't already and start the Pedsim demo launch file.
+This will start Flatland, Pedsim and a script that will spawn a few agents.
 ```
 workon rosnav
 roslaunch arena_bringup pedsim_demo.launch
 ```
-This will start Flatland, Pedsim and a script that will spawn a few agents.
